@@ -48,11 +48,12 @@
             Label the data
             */
 
-            td:nth-of-type(1):before { content: "SL"; }
-            td:nth-of-type(2):before { content: "Full Name"; }
-            td:nth-of-type(3):before { content: "Contact No"; }
-            td:nth-of-type(4):before { content: "Request Date"; }
-            td:nth-of-type(5):before { content: "Amount ($)"; }
+            /* td:nth-of-type(1):before { content: "SL"; } */
+            td:nth-of-type(1):before { content: "Full Name"; }
+            td:nth-of-type(2):before { content: "Contact No"; }
+            td:nth-of-type(3):before { content: "Request Date"; }
+            td:nth-of-type(4):before { content: "Amount ($)"; }
+            td:nth-of-type(5):before { content: "Withdrawal Details"; }
             td:nth-of-type(6):before { content: "Status"; }
             td:nth-of-type(7):before { content: "Action"; }
 
@@ -71,19 +72,45 @@
                             <table class="table table-hover pending-users-list">
                                 <thead>
                                     <tr>
-                                        <th style="width: 5%">SL</th>
-                                        <th>Full Name</th>
-                                        <th>Contact No</th>
-                                        <th>Request Date</th>
-                                        <th>Amount ($)</th>
+                                        <!-- <th style="width: 5%">SL</th> -->
+                                        <th style="width: 10%">Full Name</th>
+                                        <th style="width: 15%">Contact No</th>
+                                        <th style="width: 15%">Request Date</th>
+                                        <th style="width: 10%">Amount</th>
+                                        <th style="width: 20%">Withdrawal Details</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($wRequests as $key => $wRequest)
+                                    <?php
+                                        $wdetails = json_decode($wRequest->withdrawal_details, true);
+
+                                        if($wdetails['operator'] == 1)
+                                        {
+                                            $operator = "Bkash";
+                                        }elseif($wdetails['operator'] == 2){
+                                            $operator = "DBBL Rocket";
+                                        }elseif($wdetails['operator'] == 3){
+                                            $operator = "Nagad";
+                                        }
+
+                                        $ac_no = isset($wdetails["mbl_ac_no"])?$wdetails["mbl_ac_no"]:(isset($wdetails["ac_no"])?$wdetails["ac_no"]:'');
+
+                                        if($wdetails['ac_type'] == 1)
+                                        {
+                                            $ac_type = "Personal";
+                                        }
+                                        elseif($wdetails['ac_type'] == 2){
+                                            $ac_type = "Agent";
+                                        }
+                                        elseif($wdetails['ac_type'] == 3){
+                                            $ac_type = "Merchant";
+                                        }
+                                    ?>
                                     <tr>
-                                        <td>{{ ++$key }}</td>
+                                        <!-- <td>{{ ++$key }}</td> -->
                                         <td>
                                             {{ date('d-m-Y', strtotime($wRequest->created_at)) }}
                                         </td>
@@ -94,6 +121,18 @@
                                             {{ $wRequest->contact_number }}
                                         </td>
                                         <td>{{ "$".number_format($wRequest->withdrawal_amount,2,".","") }}</td>
+                                        <td>
+                                            @if(isset($wdetails['operator']))
+                                                Media: {{ $operator }}<br/>
+                                                Ac No: {{ $ac_no }}<br/>
+                                                Account Type: {{ $ac_type }}
+                                            @else
+                                                Account title: {{ $operator }}<br/>
+                                                Ac No: {{ $ac_no }}<br/>
+                                                Bank Name: {{ $ac_type }}<br/>
+                                                Branch Name: {{ $ac_type }}
+                                            @endif
+                                        </td>
                                         <td>
                                             @if($wRequest->request_status == 2)
                                             <label class="badge badge-primary">Pending</label>

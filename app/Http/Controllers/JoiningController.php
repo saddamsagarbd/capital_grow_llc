@@ -347,6 +347,33 @@ class JoiningController extends Controller
             // check OTP
             if($userOtp->otp == (int) $data['otp'])
             {
+                if(isset($data["banking_type"]))
+                {
+                    if($data["banking_type"] == 1)
+                    {
+                        // for mobile banking
+                        $mbData = [
+                            'operator' => $data["operator"],
+                            'mbl_ac_no' => $data["mbl_ac_no"],
+                            'ac_type' => $data["ac_type"],
+                        ];
+                    }
+
+                    if($data["banking_type"] == 2)
+                    {
+                        // for business/branch banking
+                        $mbData = [
+                            'acc_title' => $data["acc_title"],
+                            'ac_no' => $data["ac_no"],
+                            'bank_name' => $data["bank_name"],
+                            'branch_name' => $data["branch_name"],
+                        ];
+                    }
+
+                }
+
+                $data["withdrawal_details"] = json_encode($mbData);
+                
                 $response = $userDtl->sendWithdrawalRequestForAuthorization($data);
 
                 if($response)

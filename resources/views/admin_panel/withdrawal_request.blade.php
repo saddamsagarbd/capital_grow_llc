@@ -50,8 +50,9 @@
 
         td:nth-of-type(1):before { content: "SL"; }
         td:nth-of-type(2):before { content: "Request Date"; }
-        td:nth-of-type(3):before { content: "Amount ($)"; }
-        td:nth-of-type(4):before { content: "Status"; }
+        td:nth-of-type(3):before { content: "Amount"; }
+        td:nth-of-type(4):before { content: "Withdrawal Details"; }
+        td:nth-of-type(5):before { content: "Status"; }
     }
 </style>
 @endsection
@@ -69,18 +70,57 @@
                                     <tr>
                                         <th style="width: 5%">SL</th>
                                         <th>Request Date</th>
-                                        <th>Amount ($)</th>
+                                        <th>Amount</th>
+                                        <th>Withdrawal Details</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($wRequests as $key => $wRequest)
+
+                                <?php
+                                    $wdetails = json_decode($wRequest->withdrawal_details, true);
+
+                                    if($wdetails['operator'] == 1)
+                                    {
+                                        $operator = "Bkash";
+                                    }elseif($wdetails['operator'] == 2){
+                                        $operator = "DBBL Rocket";
+                                    }elseif($wdetails['operator'] == 3){
+                                        $operator = "Nagad";
+                                    }
+
+                                    $ac_no = isset($wdetails["mbl_ac_no"])?$wdetails["mbl_ac_no"]:(isset($wdetails["ac_no"])?$wdetails["ac_no"]:'');
+
+                                    if($wdetails['ac_type'] == 1)
+                                    {
+                                        $ac_type = "Personal";
+                                    }
+                                    elseif($wdetails['ac_type'] == 2){
+                                        $ac_type = "Agent";
+                                    }
+                                    elseif($wdetails['ac_type'] == 3){
+                                        $ac_type = "Merchant";
+                                    }
+                                ?>
                                     <tr>
                                         <td>{{ ++$key }}</td>
                                         <td>
                                             {{ date('d-m-Y h:i:s A', strtotime($wRequest->created_at)) }}
                                         </td>
                                         <td>{{ "$".number_format($wRequest->withdrawal_amount,2,".","") }}</td>
+                                        <td>
+                                            @if(isset($wdetails['operator']))
+                                                Media: {{ $operator }}<br/>
+                                                Ac No: {{ $ac_no }}<br/>
+                                                Account Type: {{ $ac_type }}
+                                            @else
+                                                Account title: {{ $operator }}<br/>
+                                                Ac No: {{ $ac_no }}<br/>
+                                                Bank Name: {{ $ac_type }}<br/>
+                                                Branch Name: {{ $ac_type }}
+                                            @endif
+                                        </td>
                                         <td>
                                             @if($wRequest->request_status == 2)
                                             <label class="badge badge-primary">Pending</label>

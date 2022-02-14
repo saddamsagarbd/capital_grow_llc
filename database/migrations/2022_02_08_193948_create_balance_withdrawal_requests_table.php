@@ -17,6 +17,7 @@ class CreateBalanceWithdrawalRequestsTable extends Migration
             $table->id();
             $table->string("user_id");
             $table->string("withdrawal_amount");
+            $table->json("withdrawal_details")->nullable()->default(null);
             $table->string("request_status")->default(2)->comment('0=declined, 1=paid, 2=pending');
             $table->string("created_by")->nullable()->default(null);
             $table->string("updated_by")->nullable()->default(null);

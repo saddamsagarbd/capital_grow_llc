@@ -324,6 +324,7 @@ class UserDetails extends Model
         $param = [
             'user_id' => $data['user_id'],
             'withdrawal_amount' => $data['total_amount'],
+            'withdrawal_details' => $data['withdrawal_details'],
             'created_by' => $data['user_id'],
             'created_at' => date('Y-m-d H:i:s')
         ];

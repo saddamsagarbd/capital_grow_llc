@@ -17,7 +17,6 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-
 Route::get('/', function () {
     return view('website.index');
 });

@@ -51,7 +51,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">$</span>
                                                 </div>
-                                                <input type="number" class="form-control withdrawal_amount @error('withdrawal_amount') is-invalid @enderror" value="{{ old('withdrawal_amount') }}" name="withdrawal_amount" placeholder="e.g. 185" required>
+                                                <input type="number" min="10" class="form-control withdrawal_amount @error('withdrawal_amount') is-invalid @enderror" value="{{ old('withdrawal_amount') }}" name="withdrawal_amount" placeholder="e.g. 185" required>
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">.00</span>
                                                 </div>
