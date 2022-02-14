@@ -1,0 +1,259 @@
+.elementor-kit-5 {
+	--e-global-color-primary: #555555;
+	--e-global-color-secondary: #181A99;
+	--e-global-color-text: #FDB62A;
+	--e-global-color-accent: #000000;
+	--e-global-color-9bace01: #FFFFFF;
+	--e-global-color-d062af7: #02010100;
+	--e-global-color-3d5737b: #F8F8FC;
+	--e-global-color-96951c5: #D7D7ED;
+	--e-global-typography-primary-font-family: "Roboto";
+	--e-global-typography-secondary-font-family: "Poppins";
+	--e-global-typography-text-font-family: "Sacramento";
+	--e-global-typography-text-font-weight: 400;
+	--e-global-typography-accent-font-family: "Roboto";
+	--e-global-typography-accent-font-weight: 500;
+	--e-global-typography-c2431e6-font-family: "Poppins";
+	--e-global-typography-c2431e6-font-size: 14px;
+	--e-global-typography-c2431e6-font-weight: bold;
+	--e-global-typography-c3bc2ab-font-family: "Roboto";
+	--e-global-typography-c3bc2ab-font-size: 16px;
+	--e-global-typography-c3bc2ab-font-weight: bold;
+	--e-global-typography-c3bc2ab-line-height: 1.1em;
+	--e-global-typography-e134874-font-family: "Roboto";
+	--e-global-typography-e134874-font-weight: 400;
+	--e-global-typography-e134874-line-height: 1.5em;
+	--e-global-typography-1ff2a64-font-family: "Roboto";
+	--e-global-typography-1ff2a64-font-size: 16px;
+	--e-global-typography-1ff2a64-font-weight: 400;
+	--e-global-typography-1ff2a64-line-height: 1.5em;
+	--e-global-typography-24ebbef-font-family: "Sacramento";
+	--e-global-typography-24ebbef-font-size: 36px;
+	--e-global-typography-24ebbef-font-weight: 500;
+	--e-global-typography-24ebbef-line-height: 1.1em;
+	--e-global-typography-73dfadf-font-family: "Poppins";
+	--e-global-typography-73dfadf-font-size: 36px;
+	--e-global-typography-73dfadf-font-weight: 600;
+	--e-global-typography-73dfadf-line-height: 1.5em;
+	--e-global-typography-33065aa-font-family: "Roboto";
+	--e-global-typography-33065aa-font-size: 16px;
+	--e-global-typography-33065aa-font-weight: 400;
+	--e-global-typography-44560dc-font-family: "Roboto";
+	--e-global-typography-44560dc-font-size: 18px;
+	--e-global-typography-44560dc-font-weight: 400;
+	--e-global-typography-44560dc-line-height: 1.9em;
+	--e-global-typography-9e271df-font-family: "Roboto";
+	--e-global-typography-9e271df-font-size: 16px;
+	--e-global-typography-9e271df-font-weight: 400;
+	--e-global-typography-2403ab6-font-family: "Roboto";
+	--e-global-typography-2403ab6-font-size: 16px;
+	--e-global-typography-2403ab6-font-weight: 400;
+	--e-global-typography-c3761ce-font-family: "Poppins";
+	--e-global-typography-c3761ce-font-size: 24px;
+	--e-global-typography-c3761ce-font-weight: 600;
+	--e-global-typography-e7326e0-font-family: "Roboto";
+	--e-global-typography-e7326e0-font-size: 14px;
+	--e-global-typography-d4b00a3-font-family: "Roboto";
+	--e-global-typography-d4b00a3-font-size: 16px;
+	--e-global-typography-d4b00a3-font-weight: 400;
+	--e-global-typography-e95161e-font-family: "Poppins";
+	--e-global-typography-e95161e-font-size: 18px;
+	--e-global-typography-e95161e-font-weight: 600;
+	--e-global-typography-e95161e-line-height: 1.1em;
+	--e-global-typography-e3be19e-font-family: "Poppins";
+	--e-global-typography-e3be19e-font-size: 14px;
+	--e-global-typography-e3be19e-font-weight: 400;
+	--e-global-typography-ca88864-font-family: "Poppins";
+	--e-global-typography-ca88864-font-size: 30px;
+	--e-global-typography-ca88864-font-weight: 600;
+	--e-global-typography-ca88864-line-height: 1.1em;
+	--e-global-typography-0fb882d-font-family: "Poppins";
+	--e-global-typography-0fb882d-font-size: 30px;
+	--e-global-typography-0fb882d-font-weight: 600;
+	--e-global-typography-0fb882d-line-height: 1.1em;
+	--e-global-typography-f8c5126-font-family: "Roboto";
+	--e-global-typography-f8c5126-font-size: 16px;
+	--e-global-typography-f8c5126-font-weight: 400;
+	--e-global-typography-1f96c7b-font-family: "Poppins";
+	--e-global-typography-1f96c7b-font-size: 30px;
+	--e-global-typography-1f96c7b-font-weight: 600;
+	--e-global-typography-1f96c7b-line-height: 1.1em;
+	--e-global-typography-2e6eea2-font-family: "Roboto";
+	--e-global-typography-2e6eea2-font-size: 24px;
+	--e-global-typography-2e6eea2-font-weight: 400;
+	--e-global-typography-2e6eea2-font-style: italic;
+	--e-global-typography-2e6eea2-line-height: 1.5em;
+	--e-global-typography-f0e78ba-font-family: "Poppins";
+	--e-global-typography-f0e78ba-font-size: 24px;
+	--e-global-typography-f0e78ba-font-weight: 600;
+	--e-global-typography-f0e78ba-line-height: 1.3em;
+	--e-global-typography-3fd80ac-font-family: "Poppins";
+	--e-global-typography-3fd80ac-font-size: 24px;
+	--e-global-typography-3fd80ac-font-weight: 600;
+	--e-global-typography-3fd80ac-line-height: 1.1em;
+	--e-global-typography-a341be3-font-family: "Roboto";
+	--e-global-typography-a341be3-font-size: 16px;
+	--e-global-typography-a341be3-font-weight: 400;
+	--e-global-typography-a341be3-line-height: 1.5em;
+	font-family: "Roboto", Sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+.elementor-kit-5 a {
+	color: var( --e-global-color-primary);
+	font-family: "Roboto", Sans-serif;
+}
+
+.elementor-kit-5 h1 {
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 1.1em;
+}
+
+.elementor-kit-5 h2 {
+	color: var( --e-global-color-accent);
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.1em;
+}
+
+.elementor-kit-5 h3 {
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 1.1em;
+}
+
+.elementor-kit-5 h4 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.1em;
+}
+
+.elementor-kit-5 h5 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.1em;
+}
+
+.elementor-kit-5 button,
+.elementor-kit-5 input[type="button"],
+.elementor-kit-5 input[type="submit"],
+.elementor-kit-5 .elementor-button {
+	font-family: "Poppins", Sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.1em;
+	color: var( --e-global-color-secondary);
+}
+
+.elementor-kit-5 label {
+	font-family: var( --e-global-typography-primary-font-family), Sans-serif;
+}
+
+.elementor-kit-5 input:not([type="button"]):not([type="submit"]),
+.elementor-kit-5 textarea,
+.elementor-kit-5 .elementor-field-textual {
+	font-family: var( --e-global-typography-primary-font-family), Sans-serif;
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+	max-width: 1140px;
+}
+
+.elementor-widget:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+{}
+
+h1.entry-title {
+	display: var(--page-title-display);
+}
+
+.site-header {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+@media(max-width:1024px) {
+	.elementor-kit-5 {
+		--e-global-typography-1ff2a64-font-size: 14px;
+		--e-global-typography-73dfadf-font-size: 24px;
+		--e-global-typography-33065aa-font-size: 14px;
+		--e-global-typography-44560dc-font-size: 14px;
+		--e-global-typography-9e271df-font-size: 14px;
+		--e-global-typography-2403ab6-font-size: 14px;
+		--e-global-typography-c3761ce-font-size: 18px;
+		--e-global-typography-d4b00a3-font-size: 12px;
+		--e-global-typography-e95161e-font-size: 14px;
+		--e-global-typography-e3be19e-font-size: 12px;
+		--e-global-typography-ca88864-font-size: 20px;
+		--e-global-typography-ca88864-line-height: 1.1em;
+		--e-global-typography-0fb882d-font-size: 20px;
+		--e-global-typography-0fb882d-line-height: 1.1em;
+		--e-global-typography-2e6eea2-font-size: 20px;
+		--e-global-typography-f0e78ba-font-size: 16px;
+		--e-global-typography-3fd80ac-font-size: 14px;
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+	.elementor-kit-5 h1 {
+		font-size: 29px;
+		line-height: 1.1em;
+	}
+	.elementor-kit-5 h2 {
+		font-size: 30px;
+	}
+	.elementor-kit-5 h3 {
+		font-size: 30px;
+	}
+	.elementor-kit-5 h4 {
+		font-size: 20px;
+	}
+	.elementor-kit-5 button,
+	.elementor-kit-5 input[type="button"],
+	.elementor-kit-5 input[type="submit"],
+	.elementor-kit-5 .elementor-button {
+		font-size: 14px;
+		letter-spacing: 0.6px;
+	}
+	.elementor-section.elementor-section-boxed>.elementor-container {
+		max-width: 1024px;
+	}
+}
+
+@media(max-width:767px) {
+	.elementor-kit-5 {
+		--e-global-typography-44560dc-font-size: 12px;
+		--e-global-typography-e7326e0-font-size: 12px;
+		--e-global-typography-ca88864-font-size: 16px;
+		--e-global-typography-0fb882d-font-size: 16px;
+		--e-global-typography-1f96c7b-font-size: 20px;
+		--e-global-typography-2e6eea2-font-size: 18px;
+		--e-global-typography-f0e78ba-font-size: 20px;
+		font-size: 14px;
+	}
+	.elementor-kit-5 h1 {
+		font-size: 20px;
+	}
+	.elementor-kit-5 h2 {
+		font-size: 20px;
+	}
+	.elementor-kit-5 h3 {
+		font-size: 24px;
+	}
+	.elementor-kit-5 h4 {
+		font-size: 16px;
+	}
+	.elementor-kit-5 button,
+	.elementor-kit-5 input[type="button"],
+	.elementor-kit-5 input[type="submit"],
+	.elementor-kit-5 .elementor-button {
+		font-size: 12px;
+	}
+	.elementor-section.elementor-section-boxed>.elementor-container {
+		max-width: 767px;
+	}
+}
