@@ -74,19 +74,26 @@
                                     <tr>
                                         <!-- <th style="width: 5%">SL</th> -->
                                         <th style="width: 10%">Full Name</th>
-                                        <th style="width: 15%">Contact No</th>
-                                        <th style="width: 15%">Request Date</th>
+                                        <th style="width: 12%">Contact No</th>
+                                        <th style="width: 13%">Request Date</th>
                                         <th style="width: 10%">Amount</th>
-                                        <th style="width: 20%">Withdrawal Details</th>
+                                        <th style="width: 25%">Withdrawal Details</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($wRequests as $key => $wRequest)
-                                    <?php
-                                        $wdetails = json_decode($wRequest->withdrawal_details, true);
+                                <?php
+                                    $wdetails = json_decode($wRequest->withdrawal_details, true);
+                                    $operator = "";
+                                    $ac_type = "";
+                                    $acc_title = isset($wdetails['acc_title'])?$wdetails['acc_title']:'';
+                                    $bank_name = isset($wdetails['bank_name'])?$wdetails['bank_name']:'';
+                                    $branch_name = isset($wdetails['branch_name'])?$wdetails['branch_name']:'';
 
+
+                                    if(isset($wdetails['operator'])){
                                         if($wdetails['operator'] == 1)
                                         {
                                             $operator = "Bkash";
@@ -95,9 +102,10 @@
                                         }elseif($wdetails['operator'] == 3){
                                             $operator = "Nagad";
                                         }
+                                    }
 
-                                        $ac_no = isset($wdetails["mbl_ac_no"])?$wdetails["mbl_ac_no"]:(isset($wdetails["ac_no"])?$wdetails["ac_no"]:'');
-
+                                    if(isset($wdetails['ac_type']))
+                                    {
                                         if($wdetails['ac_type'] == 1)
                                         {
                                             $ac_type = "Personal";
@@ -108,7 +116,10 @@
                                         elseif($wdetails['ac_type'] == 3){
                                             $ac_type = "Merchant";
                                         }
-                                    ?>
+                                    }
+
+                                    $ac_no = isset($wdetails["mbl_ac_no"])?$wdetails["mbl_ac_no"]:(isset($wdetails["ac_no"])?$wdetails["ac_no"]:'');
+                                ?>
                                     <tr>
                                         <!-- <td>{{ ++$key }}</td> -->
                                         <td>
@@ -127,10 +138,10 @@
                                                 Ac No: {{ $ac_no }}<br/>
                                                 Account Type: {{ $ac_type }}
                                             @else
-                                                Account title: {{ $operator }}<br/>
+                                                Account title: {{ $acc_title }}<br/>
                                                 Ac No: {{ $ac_no }}<br/>
-                                                Bank Name: {{ $ac_type }}<br/>
-                                                Branch Name: {{ $ac_type }}
+                                                Bank Name: {{ $bank_name }}<br/>
+                                                Branch Name: {{ $branch_name }}
                                             @endif
                                         </td>
                                         <td>
