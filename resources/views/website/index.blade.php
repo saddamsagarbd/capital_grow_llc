@@ -342,7 +342,7 @@
                                              <div class="elementor-image-box-content">
                                                 <h4 class="elementor-image-box-title">Golden Board</h4>
                                                 <p class="elementor-image-box-description">
-                                                   After successfully refer two users you are on <strong>Golden Board</strong>. When you satisfy the golden board criteria you will receive $350 for bonus.
+                                                   After successfully refer two users you are on <strong>Golden Board</strong>. When you satisfy the golden board criteria you will receive $370 for bonus.
                                                 </p>
                                              </div>
                                           </div>
