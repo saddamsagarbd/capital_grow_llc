@@ -100,8 +100,8 @@
                                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1974"><a href="#balance_withdrawal" class="elementor-sub-item">Balance Withdrawal</a></li>
                                        </ul>
                                     </li>
-                                    <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2048"><a href="{{ url('/register') }}" class="elementor-item">Sign Up</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1971"><a href="{{ url('/user-login') }}" class="elementor-item">Login</a></li> -->
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2048"><a href="{{ url('/register') }}" class="elementor-item">Sign Up</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1971"><a href="{{ url('/user-login') }}" class="elementor-item">Login</a></li>
                                  </ul>
                               </nav>
                               <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
