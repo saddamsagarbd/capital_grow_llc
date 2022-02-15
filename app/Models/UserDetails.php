@@ -13,12 +13,6 @@ class UserDetails extends Model
 
     public function getPendingUsersList()
     {
-        // return $users = DB::table("users as u")
-        //                 ->join('userprofiles as up', 'u.user_id', '=', 'up.user_id')
-        //                 ->select('up.*', 'u.email', 'u.username')
-        //                 ->where("u.user_status", 3)
-        //                 ->where("u.user_role", 2)
-        //                 ->get();
         return DB::table("payment_confirm_requests as pcr")
                 ->join("users as u", "u.id", "=", "pcr.user_id")
                 ->join('userprofiles as up', 'u.user_id', '=', 'up.user_id')
@@ -30,12 +24,6 @@ class UserDetails extends Model
 
     public function getActiveUsersList()
     {
-        // return $users = DB::table("users as u")
-        //                 ->join('userprofiles as up', 'u.user_id', '=', 'up.user_id')
-        //                 ->select('up.*', 'u.email', 'u.username')
-        //                 ->where("u.user_status", 1)
-        //                 ->where("u.user_role", 2)
-        //                 ->get();
         return DB::table("payment_confirm_requests as pcr")
                 ->join("users as u", "u.id", "=", "pcr.user_id")
                 ->join('userprofiles as up', 'u.user_id', '=', 'up.user_id')
