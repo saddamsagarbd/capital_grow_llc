@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en-US">
    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-   <!-- /Added by HTTrack -->
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -121,40 +120,12 @@
                                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1974"><a href="#balance_withdrawal" class="elementor-sub-item">Balance Withdrawal</a></li>
                                        </ul>
                                     </li>
-                                    <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2048"><a href="{{ url('/register') }}" class="elementor-item">Sign Up</a></li>
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1971"><a href="{{ url('/user-login') }}" class="elementor-item">Login</a></li> -->
                                  </ul>
                               </nav>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <!-- <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d60125b elementor-hidden-tablet elementor-hidden-phone" data-id="d60125b" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-91ba913 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="91ba913" data-element_type="widget" data-widget_type="button.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-button-wrapper">
-                                 <a href="{{ url('/register') }}" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-                                 <span class="elementor-button-content-wrapper">
-                                 <span class="elementor-button-text">Sign Up</span>
-                                 </span>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-b1e1fd7 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="b1e1fd7" data-element_type="widget" data-widget_type="button.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-button-wrapper">
-                                 <a href="{{ url('/user-login') }}" class="elementor-button elementor-size-sm" role="button">
-                                    <span class="elementor-button-content-wrapper">
-                                        <span class="elementor-button-text">Login</span>
-                                    </span>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div> -->
                </div>
             </section>
             <div class="clr"></div>
@@ -371,89 +342,6 @@
                   </div>
                </div>
             </section>
-            <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-cfe0c37 elementor-hidden-tablet elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cfe0c37" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-               <div class="elementor-container elementor-column-gap-no">
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0d5c750" data-id="0d5c750" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-df50f43 elementor-invisible elementor-widget elementor-widget-heading" data-id="df50f43" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
-                           <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">What Services We Offer</h2>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-1d58ba0 elementor-widget elementor-widget-text-editor" data-id="1d58ba0" data-element_type="widget" data-widget_type="text-editor.default">
-                           <div class="elementor-widget-container">
-                              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                           </div>
-                        </div>
-                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-0a449db elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0a449db" data-element_type="section">
-                           <div class="elementor-container elementor-column-gap-default">
-                              <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4c1ea29 elementor-invisible" data-id="4c1ea29" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-faeb5da elementor-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-image-box" data-id="faeb5da" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image-box.default">
-                                       <div class="elementor-widget-container">
-                                          <div class="elementor-image-box-wrapper">
-                                             <figure class="elementor-image-box-img"><img width="65" height="72" src="{{ asset('content/uploads/2021/08/Icon-4.png') }}" class="attachment-full size-full" alt="" loading="lazy" /></figure>
-                                             <div class="elementor-image-box-content">
-                                                <h4 class="elementor-image-box-title">Secure Wallet</h4>
-                                                <p class="elementor-image-box-description">Lorem ipsum dolor amet consect adiscing elit eiusmod tempor enime dolore magna aliqua.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-f9690c7 elementor-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-image-box" data-id="f9690c7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image-box.default">
-                                       <div class="elementor-widget-container">
-                                          <div class="elementor-image-box-wrapper">
-                                             <figure class="elementor-image-box-img"><img width="65" height="72" src="{{ asset('content/uploads/2021/08/Icon-5.png') }}" class="attachment-full size-full" alt="" loading="lazy" /></figure>
-                                             <div class="elementor-image-box-content">
-                                                <h4 class="elementor-image-box-title">Analysis & Planning</h4>
-                                                <p class="elementor-image-box-description">Duis aute irure dolor in reprehend voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f912a57" data-id="f912a57" data-element_type="column">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-58c4fcf elementor-invisible elementor-widget elementor-widget-image" data-id="58c4fcf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateY_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:2,&quot;sizes&quot;:[]},&quot;motion_fx_translateY_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:53}},&quot;motion_fx_range&quot;:&quot;viewport&quot;,&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
-                                       <div class="elementor-widget-container">
-                                          <img width="500" height="445" src="{{ asset('content/uploads/2021/08/Artcoin-Img.png') }}" class="attachment-full size-full" alt="" loading="lazy" srcset="{{ asset('content/uploads/2021/08/Artcoin-Img.png') }} 500w, {{ asset('content/uploads/2021/08/Artcoin-Img-300x267.png') }} 300w" sizes="(max-width: 500px) 100vw, 500px" />															
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-36a3b38 elementor-invisible" data-id="36a3b38" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-64a9d13 elementor-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-image-box" data-id="64a9d13" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image-box.default">
-                                       <div class="elementor-widget-container">
-                                          <div class="elementor-image-box-wrapper">
-                                             <figure class="elementor-image-box-img"><img width="65" height="72" src="{{ asset('content/uploads/2021/08/Icon-6.png') }}" class="attachment-full size-full" alt="" loading="lazy" /></figure>
-                                             <div class="elementor-image-box-content">
-                                                <h4 class="elementor-image-box-title">Fully Protection</h4>
-                                                <p class="elementor-image-box-description">Duis aute irure dolor in reprehend voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-f91965c elementor-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-image-box" data-id="f91965c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image-box.default">
-                                       <div class="elementor-widget-container">
-                                          <div class="elementor-image-box-wrapper">
-                                             <figure class="elementor-image-box-img"><img width="65" height="72" src="{{ asset('content/uploads/2021/08/Icon-7.png') }}" class="attachment-full size-full" alt="" loading="lazy" /></figure>
-                                             <div class="elementor-image-box-content">
-                                                <h4 class="elementor-image-box-title">Crypto Trading</h4>
-                                                <p class="elementor-image-box-description">Lorem ipsum dolor amet consect adiscing elit eiusmod tempor enime dolore magna aliqua.</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </section>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
             <section class="elementor-section elementor-top-section elementor-element elementor-element-849e5c6 elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="849e5c6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                <div class="elementor-container elementor-column-gap-no">
                   <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-efeef05" data-id="efeef05" data-element_type="column">
@@ -814,47 +702,6 @@
                   </div>
                </div>
             </section>
-            <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-8d15103 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8d15103" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-               <div class="elementor-background-overlay"></div>
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3505baa" data-id="3505baa" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-background-overlay"></div>
-                        <div class="elementor-element elementor-element-37684f1 elementor-widget elementor-widget-heading" data-id="37684f1" data-element_type="widget" data-widget_type="heading.default">
-                           <div class="elementor-widget-container">
-                              <h3 class="elementor-heading-title elementor-size-default">Still Confused About Our Features? Get a Free Trial 7 Days</h3>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-ccca1c3 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-image" data-id="ccca1c3" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_rotateZ_effect&quot;:&quot;yes&quot;,&quot;motion_fx_rotateZ_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:68}},&quot;motion_fx_rotateZ_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
-                           <div class="elementor-widget-container">
-                              <img width="135" height="220" src="{{ asset('content/uploads/2021/08/bitcoin-coin-1.png') }}" class="attachment-medium size-medium" alt="" loading="lazy" />															
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-c4c6b64 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-image" data-id="c4c6b64" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_rotateZ_effect&quot;:&quot;yes&quot;,&quot;motion_fx_rotateZ_direction&quot;:&quot;negative&quot;,&quot;motion_fx_rotateZ_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;motion_fx_rotateZ_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" data-widget_type="image.default">
-                           <div class="elementor-widget-container">
-                              <img width="69" height="76" src="{{ asset('content/uploads/2021/08/bitcoin-coin-2.png') }}" class="attachment-medium size-medium" alt="" loading="lazy" />															
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-1366d58 elementor-widget elementor-widget-text-editor" data-id="1366d58" data-element_type="widget" data-widget_type="text-editor.default">
-                           <div class="elementor-widget-container">
-                              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-4c29f38 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="4c29f38" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-button-wrapper">
-                                 <a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-                                 <span class="elementor-button-content-wrapper">
-                                 <span class="elementor-button-text">BUY TOKEN</span>
-                                 </span>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
             <section id="bonus_dist_table" class="elementor-section elementor-top-section elementor-element elementor-element-cbe27bc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cbe27bc" data-element_type="section">
                <div class="elementor-container elementor-column-gap-default">
                   <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1d2ab4a" data-id="1d2ab4a" data-element_type="column">
@@ -965,11 +812,6 @@
                                           </ul>
                                        </div>
                                     </div>
-                                    <!-- <div class="elementor-element elementor-element-b548e82 elementor-widget elementor-widget-text-editor" data-id="b548e82" data-element_type="widget" data-widget_type="text-editor.default">
-                                       <div class="elementor-widget-container">
-                                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq duis aute irure dolor in reprehenderit in voluptate.</p>
-                                       </div>
-                                    </div> -->
                                     <div class="elementor-element elementor-element-708b7f0 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-button" data-id="708b7f0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
                                        <div class="elementor-widget-container">
                                           <div class="elementor-button-wrapper">
@@ -989,166 +831,6 @@
                   </div>
                </div>
             </section>
-            <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-cd9f6b0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cd9f6b0" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-abc9f45" data-id="abc9f45" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-167958f elementor-widget elementor-widget-heading" data-id="167958f" data-element_type="widget" data-widget_type="heading.default">
-                           <div class="elementor-widget-container">
-                              <h4 class="elementor-heading-title elementor-size-default">MOBILE APP</h4>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-8e19c46 elementor-invisible elementor-widget elementor-widget-heading" data-id="8e19c46" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
-                           <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">BrandCoin App for ICO Platform</h2>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-1effff0 elementor-widget elementor-widget-text-editor" data-id="1effff0" data-element_type="widget" data-widget_type="text-editor.default">
-                           <div class="elementor-widget-container">
-                              <p>Duis aute irure dolor in reprehenderit in voluptate velit edi ese cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-80262d3 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="80262d3" data-element_type="widget" data-widget_type="image.default">
-                           <div class="elementor-widget-container">
-                              <img width="169" height="50" src="{{ asset('content/uploads/2021/08/appstore-icon.png') }}" class="elementor-animation-float attachment-large size-large" alt="" loading="lazy" />															
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-d1affbd elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="d1affbd" data-element_type="widget" data-widget_type="image.default">
-                           <div class="elementor-widget-container">
-                              <img width="170" height="50" src="{{ asset('content/uploads/2021/08/Playstore.png') }}" class="elementor-animation-float attachment-large size-large" alt="" loading="lazy" />															
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1311091" data-id="1311091" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-d5aa3f4 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="d5aa3f4" data-element_type="widget" data-widget_type="image.default">
-                           <div class="elementor-widget-container">
-                              <img width="256" height="552" src="{{ asset('content/uploads/2021/08/mobiles1.png') }}" class="elementor-animation-float attachment-full size-full" alt="" loading="lazy" srcset="{{ asset('content/uploads/2021/08/mobiles1.png') }} 256w, {{ asset('content/uploads/2021/08/mobiles1-139x300.png') }} 139w" sizes="(max-width: 256px) 100vw, 256px" />															
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-fbca553 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="fbca553" data-element_type="widget" data-widget_type="image.default">
-                           <div class="elementor-widget-container">
-                              <img width="257" height="554" src="{{ asset('content/uploads/2021/08/Crypto-moble-img2-1.png') }}" class="elementor-animation-float attachment-full size-full" alt="" loading="lazy" srcset="{{ asset('content/uploads/2021/08/Crypto-moble-img2-1.png') }} 257w, {{ asset('content/uploads/2021/08/Crypto-moble-img2-1-139x300.png') }} 139w" sizes="(max-width: 257px) 100vw, 257px" />															
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
-            <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-19e36a6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="19e36a6" data-element_type="section">
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e512f61" data-id="e512f61" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-de158cb elementor-widget__width-auto elementor-widget-mobile__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="de158cb" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
-                           <div class="elementor-widget-container">
-                              <img width="65" height="65" src="{{ asset('content/uploads/2021/08/testsimonial-logo.png') }}" class="attachment-large size-large" alt="" loading="lazy" />															
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
-            <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-cd28dcb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cd28dcb" data-element_type="section">
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-92ab490" data-id="92ab490" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-6abd776 elementor-widget elementor-widget-testimonial" data-id="6abd776" data-element_type="widget" data-widget_type="testimonial.default">
-                           <div class="elementor-widget-container">
-                              <style>/*! elementor - v3.5.5 - 03-02-2022 */
-                                 .elementor-testimonial-wrapper{overflow:hidden;text-align:center}.elementor-testimonial-wrapper .elementor-testimonial-content{font-size:1.3em;margin-bottom:20px}.elementor-testimonial-wrapper .elementor-testimonial-name{line-height:1.5;display:block}.elementor-testimonial-wrapper .elementor-testimonial-job{font-size:.85em;display:block}.elementor-testimonial-wrapper .elementor-testimonial-meta{width:100%;line-height:1}.elementor-testimonial-wrapper .elementor-testimonial-meta-inner{display:inline-block}.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-details,.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-image{display:table-cell;vertical-align:middle}.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-image img{width:60px;height:60px;-webkit-border-radius:50%;border-radius:50%;-o-object-fit:cover;object-fit:cover;max-width:none}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-image{padding-right:15px}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-details{text-align:left}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-details,.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-image{display:block}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-image{margin-bottom:20px}
-                              </style>
-                              <div class="elementor-testimonial-wrapper">
-                                 <div class="elementor-testimonial-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                 <div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
-                                    <div class="elementor-testimonial-meta-inner">
-                                       <div class="elementor-testimonial-image">
-                                          <img width="100" height="100" src="{{ asset('content/uploads/2021/08/Testimonial-img.png') }}" class="attachment-full size-full" alt="" loading="lazy" />						
-                                       </div>
-                                       <div class="elementor-testimonial-details">
-                                          <div class="elementor-testimonial-name">Rizwan Joseph </div>
-                                          <div class="elementor-testimonial-job">CEO, Co-Founder</div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
-            <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-6b048c7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6b048c7" data-element_type="section">
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8b50575" data-id="8b50575" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-cba9476 elementor-invisible elementor-widget elementor-widget-heading" data-id="cba9476" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
-                           <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">Latest News</h2>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-d20bde6 elementor-grid-tablet-3 elementor-posts--align-center elementor-posts__hover-none elementor-grid-3 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-widget elementor-widget-posts" data-id="d20bde6" data-element_type="widget" data-settings="{&quot;cards_columns_tablet&quot;:&quot;3&quot;,&quot;cards_columns&quot;:&quot;3&quot;,&quot;cards_columns_mobile&quot;:&quot;1&quot;,&quot;cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]}}" data-widget_type="posts.cards">
-                           <div class="elementor-widget-container">
-                              <link rel="stylesheet" href="{{ asset('content/plugins/elementor-pro/assets/css/widget-posts.min.css') }}">
-                              <div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
-                                 <article class="elementor-post elementor-grid-item post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-                                    <div class="elementor-post__card">
-                                       <a class="elementor-post__thumbnail__link" href="index.php/hello-world/index.html" >
-                                          <div class="elementor-post__thumbnail"><img width="1370" height="913" src="{{ asset('content/uploads/2021/08/Blog-4.jpg') }}" class="attachment-full size-full" alt="" loading="lazy" srcset="{{ asset('content/uploads/2021/08/Blog-4.jpg') }} 1370w, {{ asset('content/uploads/2021/08/Blog-4-300x200.jpg') }} 300w, {{ asset('content/uploads/2021/08/Blog-4-1024x682.jpg') }} 1024w, {{ asset('content/uploads/2021/08/Blog-4-768x512.jpg') }} 768w" sizes="(max-width: 1370px) 100vw, 1370px" /></div>
-                                       </a>
-                                       <div class="elementor-post__text">
-                                          <h3 class="elementor-post__title">
-                                             <a href="index.php/hello-world/index.html" >
-                                             The Crypto project has reached billions.			</a>
-                                          </h3>
-                                       </div>
-                                       <div class="elementor-post__meta-data">
-                                          <span class="elementor-post-date">
-                                          August 10, 2021		</span>
-                                       </div>
-                                    </div>
-                                 </article>
-                                 <article class="elementor-post elementor-grid-item post-959 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-                                    <div class="elementor-post__card">
-                                       <a class="elementor-post__thumbnail__link" href="index.php/start-the-redemption-before-the-ico/index.html" >
-                                          <div class="elementor-post__thumbnail"><img width="1370" height="913" src="{{ asset('content/uploads/2021/08/Blog-3.jpg') }}" class="attachment-full size-full" alt="" loading="lazy" srcset="{{ asset('content/uploads/2021/08/Blog-3.jpg') }} 1370w, {{ asset('content/uploads/2021/08/Blog-3-300x200.jpg') }} 300w, {{ asset('content/uploads/2021/08/Blog-3-1024x682.jpg') }} 1024w, {{ asset('content/uploads/2021/08/Blog-3-768x512.jpg') }} 768w" sizes="(max-width: 1370px) 100vw, 1370px" /></div>
-                                       </a>
-                                       <div class="elementor-post__text">
-                                          <h3 class="elementor-post__title">
-                                             <a href="index.php/start-the-redemption-before-the-ico/index.html" >
-                                             Start the redemption before the ICO.			</a>
-                                          </h3>
-                                       </div>
-                                       <div class="elementor-post__meta-data">
-                                          <span class="elementor-post-date">
-                                          August 12, 2021		</span>
-                                       </div>
-                                    </div>
-                                 </article>
-                                 <article class="elementor-post elementor-grid-item post-958 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-                                    <div class="elementor-post__card">
-                                       <a class="elementor-post__thumbnail__link" href="index.php/the-bc-crypto-project-has-reached-trillions/index.html" >
-                                          <div class="elementor-post__thumbnail"><img width="1370" height="913" src="{{ asset('content/uploads/2021/08/Blog-2-1.jpg') }}" class="attachment-full size-full" alt="" loading="lazy" srcset="{{ asset('content/uploads/2021/08/Blog-2-1.jpg') }} 1370w, {{ asset('content/uploads/2021/08/Blog-2-1-300x200.jpg') }} 300w, {{ asset('content/uploads/2021/08/Blog-2-1-1024x682.jpg') }} 1024w, {{ asset('content/uploads/2021/08/Blog-2-1-768x512.jpg') }} 768w" sizes="(max-width: 1370px) 100vw, 1370px" /></div>
-                                       </a>
-                                       <div class="elementor-post__text">
-                                          <h3 class="elementor-post__title">
-                                             <a href="index.php/the-bc-crypto-project-has-reached-trillions/index.html" >
-                                             The BC-Crypto Project has reached trillions.			</a>
-                                          </h3>
-                                       </div>
-                                       <div class="elementor-post__meta-data">
-                                          <span class="elementor-post-date">
-                                          August 12, 2021		</span>
-                                       </div>
-                                    </div>
-                                 </article>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
          </div>
       </div>
       <div data-elementor-type="footer" data-elementor-id="1076" class="elementor elementor-1076 elementor-location-footer" data-elementor-settings="[]">
@@ -1157,162 +839,6 @@
                <div class="elementor-container elementor-column-gap-default">
                   <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a87e308" data-id="a87e308" data-element_type="column">
                      <div class="elementor-widget-wrap elementor-element-populated">
-                        <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-4931c8b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4931c8b" data-element_type="section">
-                           <div class="elementor-container elementor-column-gap-default">
-                              <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6c9cf34" data-id="6c9cf34" data-element_type="column">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-eed69d7 elementor-invisible elementor-widget elementor-widget-heading" data-id="eed69d7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-                                       <div class="elementor-widget-container">
-                                          <h4 class="elementor-heading-title elementor-size-default">Keep Updated About Our Product</h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b5174f2" data-id="b5174f2" data-element_type="column">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-6e4c3f3 elementor-button-align-center elementor-widget elementor-widget-form" data-id="6e4c3f3" data-element_type="widget" data-settings="{&quot;button_width&quot;:&quot;20&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width_mobile&quot;:&quot;50&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
-                                       <div class="elementor-widget-container">
-                                          <style>/*! elementor-pro - v3.3.7 - 15-08-2021 */
-                                             .elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons{-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}.e-form__indicators{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:nowrap;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators,.e-form__indicators__indicator{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.e-form__indicators__indicator{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-preferred-size:0;flex-basis:0;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;-webkit-transition:width .1s linear;-o-transition:width .1s linear;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-inactive object,.e-form__indicators__indicator--state-inactive svg{fill:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active object,.e-form__indicators__indicator--state-active svg{fill:var(--e-form-steps-indicator-active-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator--state-completed object,.e-form__indicators__indicator--state-completed svg{fill:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img,.e-form__indicators__indicator__icon object,.e-form__indicators__indicator__icon svg{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__icon .e-font-icon-svg{height:1em}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#c2cbd2}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-button .elementor-form-spinner{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.elementor-form .elementor-button>span{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}.elementor-form .elementor-button svg{height:auto}.elementor-form .elementor-button .e-font-icon-svg{height:1em}
-                                          </style>
-                                          <form class="elementor-form" method="post" name="New Form">
-                                             <input type="hidden" name="post_id" value="1076"/>
-                                             <input type="hidden" name="form_id" value="6e4c3f3"/>
-                                             <input type="hidden" name="referer_title" value="" />
-                                             <input type="hidden" name="queried_id" value="40"/>
-                                             <div class="elementor-form-fields-wrapper elementor-labels-">
-                                                <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-80 elementor-sm-50 elementor-field-required">
-                                                   <label for="form-field-email" class="elementor-field-label elementor-screen-only">Email</label><input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Enter Your Email..." required="required" aria-required="true">				
-                                                </div>
-                                                <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-20 e-form__buttons elementor-sm-50">
-                                                   <button type="submit" class="elementor-button elementor-size-md">
-                                                   <span >
-                                                   <span class=" elementor-button-icon">
-                                                   </span>
-                                                   <span class="elementor-button-text">SUBMIT</span>
-                                                   </span>
-                                                   </button>
-                                                </div>
-                                             </div>
-                                          </form>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </section> -->
-                        <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-3f4c58b elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3f4c58b" data-element_type="section">
-                           <div class="elementor-container elementor-column-gap-default">
-                              <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-c50e262" data-id="c50e262" data-element_type="column">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-b127bd3 elementor-widget elementor-widget-heading" data-id="b127bd3" data-element_type="widget" data-widget_type="heading.default">
-                                       <div class="elementor-widget-container">
-                                          <h4 class="elementor-heading-title elementor-size-default">Resources</h4>
-                                       </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-8f2e9dd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="8f2e9dd" data-element_type="widget" data-widget_type="icon-list.default">
-                                       <div class="elementor-widget-container">
-                                          <ul class="elementor-icon-list-items">
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">WhitePappers </span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">Technical Paper </span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">Busines Summary</span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text"> Brand Resources</span>
-                                             </li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-74f6b7e" data-id="74f6b7e" data-element_type="column">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-ecbb560 elementor-widget elementor-widget-heading" data-id="ecbb560" data-element_type="widget" data-widget_type="heading.default">
-                                       <div class="elementor-widget-container">
-                                          <h4 class="elementor-heading-title elementor-size-default">Bitcoin Price API</h4>
-                                       </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-d65a3a9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d65a3a9" data-element_type="widget" data-widget_type="icon-list.default">
-                                       <div class="elementor-widget-container">
-                                          <ul class="elementor-icon-list-items">
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">Currency Market</span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text"> Average Bitcoin Price</span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">API Documentation </span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">API Statics</span>
-                                             </li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3103573" data-id="3103573" data-element_type="column">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-52ed203 elementor-widget elementor-widget-heading" data-id="52ed203" data-element_type="widget" data-widget_type="heading.default">
-                                       <div class="elementor-widget-container">
-                                          <h4 class="elementor-heading-title elementor-size-default">Marketplace</h4>
-                                       </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-c133314 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c133314" data-element_type="widget" data-widget_type="icon-list.default">
-                                       <div class="elementor-widget-container">
-                                          <ul class="elementor-icon-list-items">
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">Explore </span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">Activity</span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text"> Authors </span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">Privacy Policy</span>
-                                             </li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1d9c13f" data-id="1d9c13f" data-element_type="column">
-                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                    <div class="elementor-element elementor-element-9ce0174 elementor-widget elementor-widget-heading" data-id="9ce0174" data-element_type="widget" data-widget_type="heading.default">
-                                       <div class="elementor-widget-container">
-                                          <h4 class="elementor-heading-title elementor-size-default">About Us</h4>
-                                       </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-9a8c863 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="9a8c863" data-element_type="widget" data-widget_type="icon-list.default">
-                                       <div class="elementor-widget-container">
-                                          <ul class="elementor-icon-list-items">
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">Project Team </span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">Project Mangement </span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">News </span>
-                                             </li>
-                                             <li class="elementor-icon-list-item">
-                                                <span class="elementor-icon-list-text">FAQ</span>
-                                             </li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </section> -->
                         <section class="elementor-section elementor-inner-section elementor-element elementor-element-a212339 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a212339" data-element_type="section">
                            <div class="elementor-container elementor-column-gap-default">
                               <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-fa2a910" data-id="fa2a910" data-element_type="column">
