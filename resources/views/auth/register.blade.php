@@ -204,7 +204,7 @@
 
                 <div class="text-block text-center my-3">
                   <span class="text-small font-weight-semibold">{{ __('Already have and account') }} ?</span>
-                  <a href="{{ url('/') }}" class="text-black text-small">{{ __('Login') }}</a>
+                  <a href="{{ url('/user-login') }}" class="text-black text-small">{{ __('Login') }}</a>
                 </div>
               </form>
             </div>
