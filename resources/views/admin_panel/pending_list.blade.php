@@ -110,7 +110,7 @@
                                             <label class="badge badge-danger">Pending</label>
                                         </td>
                                         <td>
-                                            <button class="btn btn-info btn-xs make_confirm" data-user_id="{{ $user->user_id }}">Make Confirm</button>
+                                            <button class="btn btn-info btn-xs make_confirm" data-user_id="{{ $user->user_id }}">Confirm</button>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -149,6 +149,7 @@
         $(document).on("click", ".make_confirm", function(e){
             e.preventDefault();
             var userID = $(this).data("user_id");
+            $(this).prop('disabled', true);
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

@@ -250,7 +250,7 @@ class HomeController extends Controller
 
         $subject = "Payment Confirm";
 
-        Mail::to('saddamsagar02@gmail.com')->send(new SendPaymentConfirmMail($details, $subject));
+        Mail::to('devsdm2022@gmail.com')->send(new SendPaymentConfirmMail($details, $subject));
         return true;
     }
 
@@ -468,29 +468,36 @@ class HomeController extends Controller
             $data = $request->except(['_token']);
             $id = $data["user_id"];
             $userdtl = new UserDetails();
+            $data = $userdtl->getUserByIdN($id);
+            $ref_username = $userdtl->getPlacementReferenceUsernameByIdN($data->reference_id);
+            $plc_username = $userdtl->getPlacementReferenceUsernameByIdN($data->placement_id);
             
             $updateUserStatus = $userdtl->updateUserDetails($id);
+            $updatePaymentStatus = $userdtl->updatePaymentRequestStatus($id);
             
-            if($updateUserStatus)
+            if($updateUserStatus && $updatePaymentStatus > 0)
             {
                 $data = $userdtl->getUserByIdN($id);
                 $ref_username = $userdtl->getPlacementReferenceUsernameByIdN($data->reference_id);
                 $plc_username = $userdtl->getPlacementReferenceUsernameByIdN($data->placement_id);
                 $this->sendEmail($data);
 
-                // Referal User count
-                $this->increaseReferalUsers($plc_username->username);
+                if(!is_null($data->reference_id) && !is_null($data->placement_id))
+                {
+                    // Referal User count
+                    $this->increaseReferalUsers($plc_username->username);
 
-                // Share reference bonus
+                    // Share reference bonus
 
-                $this->shareReferenceBonus($ref_username->username, $id);
+                    $this->shareReferenceBonus($ref_username->username, $id);
 
-                // Share generation bonus
+                    // Share generation bonus
 
-                $this->generationIncentive($id);
+                    $this->generationIncentive($id);
 
-                // promote user level
-                $this->promoteUserToGoldenBoard($plc_username->username);
+                    // promote user level
+                    $this->promoteUserToGoldenBoard($plc_username->username);
+                }
 
                 echo json_encode(['status' => true]);
                 exit;

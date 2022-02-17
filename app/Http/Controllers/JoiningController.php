@@ -289,7 +289,7 @@ class JoiningController extends Controller
 
         // here mail to will be dynamic $data->email
 
-        Mail::to('saddamsagar02@gmail.com')->send(new SendOTPMail($details, $subject));
+        Mail::to('devsdm2022@gmail.com')->send(new SendOTPMail($details, $subject));
         return true;
     }
 

@@ -353,4 +353,12 @@ class UserDetails extends Model
                 ->where('id', (int) $id)
                 ->first();
     }
+
+    public function updatePaymentRequestStatus($id)
+    {
+        
+        return DB::table('payment_confirm_requests')
+                ->where('user_id', (int) $id)
+                ->update(['payment_request' => 1]);;
+    }
 }
