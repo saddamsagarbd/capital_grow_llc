@@ -34,7 +34,7 @@
                             </div>
                             <hr>
                         @endif
-                        @if(is_null($payment_request) && $payment_request === '')
+                        @if(is_null($payment_request) || $payment_request === '')
                             <form class="form-sample" action="{{ route('make-payment-confirm') }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
