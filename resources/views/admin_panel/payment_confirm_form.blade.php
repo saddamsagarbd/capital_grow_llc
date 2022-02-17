@@ -16,7 +16,7 @@
                         <hr>
                         <h4 class="card-description">Payment Confirmation Form</h4>
                         <hr>
-                        @if($payment_request == 0)
+                        @if(!is_null($payment_request) && $payment_request == 0)
                             <div class="alert alert-success">
                                 Thank you ! We have received your request, this account will be activated very soon.
                             </div>
