@@ -138,6 +138,9 @@ class HomeController extends Controller
 
             $data = $req->except(["_token", "img"]);
             $data['receipt_name'] = $filename;
+            $data['pay_to'] = $data['payment_option'];
+
+            unset($data['payment_option']);
 
             $data = array_filter($data);
 
