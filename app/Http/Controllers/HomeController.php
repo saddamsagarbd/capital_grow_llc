@@ -468,9 +468,6 @@ class HomeController extends Controller
             $data = $request->except(['_token']);
             $id = $data["user_id"];
             $userdtl = new UserDetails();
-            $data = $userdtl->getUserByIdN($id);
-            $ref_username = $userdtl->getPlacementReferenceUsernameByIdN($data->reference_id);
-            $plc_username = $userdtl->getPlacementReferenceUsernameByIdN($data->placement_id);
             
             $updateUserStatus = $userdtl->updateUserDetails($id);
             $updatePaymentStatus = $userdtl->updatePaymentRequestStatus($id);
