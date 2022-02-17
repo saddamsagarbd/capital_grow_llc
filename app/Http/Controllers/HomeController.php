@@ -84,7 +84,7 @@ class HomeController extends Controller
                             ->first();
 
         return view('admin_panel.payment_confirm_form', [
-            'payment_request' => isset($paymentReqStatus->payment_request)?$paymentReqStatus->payment_request:''
+            'payment_request' => (isset($paymentReqStatus->payment_request) && $paymentReqStatus->payment_request == 1)?$paymentReqStatus->payment_request:null
         ]);
     }
 

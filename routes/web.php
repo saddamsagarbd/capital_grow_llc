@@ -31,7 +31,7 @@ Route::get('/clear-cache', function() {
 
 Auth::routes();
 
-Route::get('/user-login', [RegisterController::class, 'index']);
+Route::get('/user-login', [RegisterController::class, 'index'])->name('user-login');
 
 // Dashboard
 Route::get('/dashboard', [HomeController::class, 'index']);
