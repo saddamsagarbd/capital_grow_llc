@@ -21,6 +21,14 @@ Route::get('/', function () {
     return view('website.index');
 });
 
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+    Artisan::call('view:clear');
+    Artisan::call('route:clear');
+    // return what you want
+});
+
 Auth::routes();
 
 Route::get('/user-login', [RegisterController::class, 'index']);
