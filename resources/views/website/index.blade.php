@@ -753,7 +753,7 @@
                                           </td>
                                           <td colspan="" rowspan="" class="" id="">
                                              <div class="td-content-wrapper">
-                                                <div class="td-content">$3</div>
+                                                <div class="td-content">$3<span>(upto $300 only)</span></div>
                                              </div>
                                           </td>
                                           <td colspan="" rowspan="" class="" id="">
