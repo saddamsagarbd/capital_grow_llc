@@ -120,6 +120,8 @@
                                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1974"><a href="#balance_withdrawal" class="elementor-sub-item">Balance Withdrawal</a></li>
                                        </ul>
                                     </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1969"><a href="{{ url('/register') }}" class="elementor-item">Sign Up</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1969"><a href="{{ url('/user-login') }}" class="elementor-item">Login</a></li>
                                  </ul>
                               </nav>
                            </div>
