@@ -88,7 +88,7 @@ class RegisterController extends Controller
 
         $subject = "Accounts List";
 
-        Mail::to('devsdm2022@gmail.com')->send(new SendMail($details, $subject));
+        Mail::to($data['email'])->send(new SendMail($details, $subject));
         return true;
     }
 

@@ -253,7 +253,7 @@ class HomeController extends Controller
 
         $subject = "Payment Confirm";
 
-        Mail::to('devsdm2022@gmail.com')->send(new SendPaymentConfirmMail($details, $subject));
+        Mail::to($data->email)->send(new SendPaymentConfirmMail($details, $subject));
         return true;
     }
 
@@ -477,12 +477,12 @@ class HomeController extends Controller
             
             if($updateUserStatus && $updatePaymentStatus > 0)
             {
-                $data = $userdtl->getUserByIdN($id);
-                $ref_username = $userdtl->getPlacementReferenceUsernameByIdN($data->reference_id);
-                $plc_username = $userdtl->getPlacementReferenceUsernameByIdN($data->placement_id);
-                $this->sendEmail($data);
+                $u_data = $userdtl->getUserByIdN($id);
+                $ref_username = $userdtl->getPlacementReferenceUsernameByIdN($u_data->reference_id);
+                $plc_username = $userdtl->getPlacementReferenceUsernameByIdN($u_data->placement_id);
+                $this->sendEmail($u_data);
 
-                if(!is_null($data->reference_id) && !is_null($data->placement_id))
+                if(!is_null($data->reference_id) && !is_null($u_data->placement_id))
                 {
                     // Referal User count
                     $this->increaseReferalUsers($plc_username->username);

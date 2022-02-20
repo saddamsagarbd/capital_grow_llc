@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -86,54 +87,63 @@ class JoiningController extends Controller
                 'img.required'                  => 'You must choose a file',
             ];
         
-            $this->validate($req, $rules, $customMessages);
-            $filename = "";
+            // $req->validate($rules, $customMessages);
 
-            if ($req->hasfile('img')) {
-                $filename = $this->file_upload($req->file('img'));
-            }
+            $validator = Validator::make($req->all(), $rules);
+     
+            if ($validator->fails()) {
+                return back()->withErrors($validator)->withInput();
+            }else{
 
-            $data = $req->except(["_token", "img"]);
+                $filename = "";
 
-            $ref_username = $data['refer_username']; 
-            $plc_username = $data['placement_username']; 
+                if ($req->hasfile('img')) {
+                    $filename = $this->file_upload($req->file('img'));
+                }
 
-            $user_profile = new UserDetails();
+                $data = $req->except(["_token", "img"]);
 
-            $getReferenceUserid = $user_profile->getUserByUsername($data['refer_username']);
-            $getPlacementUserid = $user_profile->getUserByUsername($data['placement_username']);
+                $ref_username = $data['refer_username']; 
+                $plc_username = $data['placement_username']; 
 
-            if(isset($getReferenceUserid->id)){
-                $data['refer_username'] = $getReferenceUserid->id;
-            }
+                $user_profile = new UserDetails();
 
-            if(isset($getPlacementUserid->id)){
-                $data['placement_username'] = $getPlacementUserid->id;
-            }
+                $getReferenceUserid = $user_profile->getUserByUsername($data['refer_username']);
+                $getPlacementUserid = $user_profile->getUserByUsername($data['placement_username']);
 
-            $data['user_id'] = mt_rand(100000,999999).strtotime(now());
-            $data['filename'] = $filename;
-    
-            $userData = [
-                'user_id'       => $data['user_id'],
-                'username'      => $data['username'],
-                'email'         => $data['email'],
-                'password'      => Hash::make($data['password'])
-            ];
-    
-            $user = User::create($userData);
+                if(isset($getReferenceUserid->id)){
+                    $data['refer_username'] = $getReferenceUserid->id;
+                }
 
-            if(isset($user->id))
-            {
-                event(new CreateUserProfile((object) $data));
+                if(isset($getPlacementUserid->id)){
+                    $data['placement_username'] = $getPlacementUserid->id;
+                }
+
+                $data['user_id'] = mt_rand(100000,999999).strtotime(now());
+                $data['filename'] = $filename;
         
-                event(new CreateAccount((object) $data));
+                $userData = [
+                    'user_id'       => $data['user_id'],
+                    'username'      => $data['username'],
+                    'email'         => $data['email'],
+                    'password'      => Hash::make($data['password'])
+                ];
+        
+                $user = User::create($userData);
 
-                return redirect('/joining')->with('msg', 'User joined successfully');
+                if(isset($user->id))
+                {
+                    event(new CreateUserProfile((object) $data));
+            
+                    event(new CreateAccount((object) $data));
+
+                    return redirect('/joining')->with('msg', 'User joined successfully');
+                }
             }
 
         } catch (\Exception $e) {
             return $e->getMessage();
+            // return back()->withErrors($e->getMessage())->withInput();
         }
 
     }
@@ -338,54 +348,59 @@ class JoiningController extends Controller
                 'otp.required'                  => 'OTP is required'
             ];
         
-            $this->validate($req, $rules, $customMessages);
-
-            $data = $req->except(['_token']);
-
-            $userDtl = new UserDetails();
-            $userOtp = $userDtl->getOtpByUserID($data['user_id']);
-            // check OTP
-            if($userOtp->otp == (int) $data['otp'])
-            {
-                if(isset($data["banking_type"]))
-                {
-                    if($data["banking_type"] == 1)
-                    {
-                        // for mobile banking
-                        $mbData = [
-                            'operator' => $data["operator"],
-                            'mbl_ac_no' => $data["mbl_ac_no"],
-                            'ac_type' => $data["ac_type"],
-                        ];
-                    }
-
-                    if($data["banking_type"] == 2)
-                    {
-                        // for business/branch banking
-                        $mbData = [
-                            'acc_title' => $data["acc_title"],
-                            'ac_no' => $data["ac_no"],
-                            'bank_name' => $data["bank_name"],
-                            'branch_name' => $data["branch_name"],
-                        ];
-                    }
-
-                }
-
-                $data["withdrawal_details"] = json_encode($mbData);
-                
-                $response = $userDtl->sendWithdrawalRequestForAuthorization($data);
-
-                if($response)
-                {
-                    return redirect('/withdrawal-request');
-                }
-                return redirect()->back()->with('error', 'Something wrong. Please try after sometime!');
-                
+            // $this->validate($req, $rules, $customMessages);
+            $validator = Validator::make($req->all(), $rules);
+     
+            if ($validator->fails()) {
+                return back()->withErrors($validator)->withInput();
             }else{
-                return redirect()->back()->with('error', 'OTP does not match!');
+                $data = $req->except(['_token']);
+
+                $userDtl = new UserDetails();
+                $userOtp = $userDtl->getOtpByUserID($data['user_id']);
+                // check OTP
+                if($userOtp->otp == (int) $data['otp'])
+                {
+                    if(isset($data["banking_type"]))
+                    {
+                        if($data["banking_type"] == 1)
+                        {
+                            // for mobile banking
+                            $mbData = [
+                                'operator' => $data["operator"],
+                                'mbl_ac_no' => $data["mbl_ac_no"],
+                                'ac_type' => $data["ac_type"],
+                            ];
+                        }
+
+                        if($data["banking_type"] == 2)
+                        {
+                            // for business/branch banking
+                            $mbData = [
+                                'acc_title' => $data["acc_title"],
+                                'ac_no' => $data["ac_no"],
+                                'bank_name' => $data["bank_name"],
+                                'branch_name' => $data["branch_name"],
+                            ];
+                        }
+
+                    }
+
+                    $data["withdrawal_details"] = json_encode($mbData);
+                    
+                    $response = $userDtl->sendWithdrawalRequestForAuthorization($data);
+
+                    if($response)
+                    {
+                        return redirect('/withdrawal-request');
+                    }
+                    return redirect()->back()->with('error', 'Something wrong. Please try after sometime!');
+                    
+                }else{
+                    return redirect()->back()->with('error', 'OTP does not match!');
+                }
+                exit;
             }
-            exit;
 
         } catch (\Exception $e) {
             return $e->getMessage();

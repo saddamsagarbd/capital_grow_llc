@@ -16,6 +16,16 @@
                         <hr>
                         <h4 class="card-description">Personal Information</h4>
                         <hr>
+                        <!-- @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            <hr>
+                        @endif -->
                         <form class="form-sample" action="{{ route('make-user-joining') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
