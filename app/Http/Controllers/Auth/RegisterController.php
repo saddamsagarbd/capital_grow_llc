@@ -87,8 +87,20 @@ class RegisterController extends Controller
         ];
 
         $subject = "Accounts List";
+        $data['email'] = "saddamsagar02@gmail.com";
+        $data['full_name'] = $data["first_name"]." ".$data["last_name"];
 
         Mail::to($data['email'])->send(new SendMail($details, $subject));
+        // return Mail::send('emails.test', ['user' => $data], function ($m) use ($data) {
+        //     $m->from('hello@app.com', 'Your Application');
+ 
+        //     $m->to($data['email'], $data['full_name'])->subject('Your Reminder!');
+        // });
+        // return mail(
+        //     $data['email'],
+        //     $subject,
+        //     "test",
+        // );
         return true;
     }
 
@@ -100,6 +112,13 @@ class RegisterController extends Controller
      */
     protected function create(array $data, $filename = "")
     {
+        // $test = $this->sendEmail($data);
+        
+        // echo "<pre>";
+        // var_dump($test);
+        // echo "</pre>";
+        // exit;
+
         $data['user_id'] = mt_rand(100000,999999).strtotime(now());
         $data['filename'] = $filename;
 

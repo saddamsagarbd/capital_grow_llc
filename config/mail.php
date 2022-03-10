@@ -14,6 +14,7 @@ return [
     */
 
     'default' => env('MAIL_MAILER', 'smtp'),
+    // 'default' => env('MAIL_MAILER', 'mail'),
 
     /*
     |--------------------------------------------------------------------------
@@ -44,6 +45,16 @@ return [
             'timeout' => null,
             'auth_mode' => null,
         ],
+        // 'mail' => [
+        //     'transport' => 'mail',
+        //     'host' => env('MAIL_HOST', 'mail.capitalgrowllc.com'),
+        //     'port' => env('MAIL_PORT', 465),
+        //     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+        //     'username' => env('no-reply@capitalgrowllc.com'),
+        //     'password' => env('gFI3dpIwZ)Si'),
+        //     'timeout' => null,
+        //     'auth_mode' => null,
+        // ],
 
         'ses' => [
             'transport' => 'ses',

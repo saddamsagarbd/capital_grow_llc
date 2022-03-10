@@ -111,6 +111,9 @@
                                         </td>
                                         <td>
                                             <button class="btn btn-info btn-xs make_confirm" data-user_id="{{ $user->user_id }}">Confirm</button>
+                                            <button class="btn btn-info btn-xs send_payinfo" data-user_id="{{ $user->user_id }}">
+                                                <i class="fa fa-paper-plane fa-fw"></i> Send Payment Info
+                                            </button>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -131,12 +134,12 @@
         $('.pending-users-list').DataTable( {
             responsive: true
         });
-        function ajaxCall(userId)
+        function doAction(userId, __for)
         {
             $.ajax({
                 type: 'POST',
                 url: "{{ url('/') }}/confirm-payment",
-                data: {'user_id' : userId}, // here $(this) refers to the ajax object not form
+                data: {'user_id' : userId, 'for': __for}, // here $(this) refers to the ajax object not form
                 dataType: 'JSON',
                 success: function (res) {
                     if(res.status == true){
@@ -156,7 +159,20 @@
                 }
             });
 
-            ajaxCall(userID);
+            doAction(userID, "confirm_payment");
+        });
+
+        $(document).on("click", ".send_payinfo", function(e){
+            e.preventDefault();
+            var userID = $(this).data("user_id");
+            $(this).prop('disabled', true);
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            doAction(userID, "send_payinfo");
         });
     })
 </script>

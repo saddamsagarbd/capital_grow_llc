@@ -252,7 +252,6 @@ class HomeController extends Controller
         ];
 
         $subject = "Payment Confirm";
-
         Mail::to($data->email)->send(new SendPaymentConfirmMail($details, $subject));
         return true;
     }
@@ -471,10 +470,16 @@ class HomeController extends Controller
             $data = $request->except(['_token']);
             $id = $data["user_id"];
             $userdtl = new UserDetails();
+
+            // if($data["for"] == "send_payinfo"){
+                // $u_data = $userdtl->getUserByIdN($id);
+                // $this->sendEmail($u_data);
+            // }
+            // exit;
             
             $updateUserStatus = $userdtl->updateUserDetails($id);
             $updatePaymentStatus = $userdtl->updatePaymentRequestStatus($id);
-            
+
             if($updateUserStatus && $updatePaymentStatus > 0)
             {
                 $u_data = $userdtl->getUserByIdN($id);
@@ -482,7 +487,7 @@ class HomeController extends Controller
                 $plc_username = $userdtl->getPlacementReferenceUsernameByIdN($u_data->placement_id);
                 $this->sendEmail($u_data);
 
-                if(!is_null($data->reference_id) && !is_null($u_data->placement_id))
+                if(!is_null($u_data->reference_id) && !is_null($u_data->placement_id))
                 {
                     // Referal User count
                     $this->increaseReferalUsers($plc_username->username);
