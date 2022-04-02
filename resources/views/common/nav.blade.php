@@ -3,7 +3,7 @@
         $img_name = getProfileImage(Auth::user()->user_id);
         $imgSrc = '/images/profile_img/default_profile_img.png';
 
-        if($img_name != "") $imgSrc = '/uploads/profile_images/'.$img_name;
+        if($img_name != "" && file_exists(public_path().'/uploads/profile_images/'.$img_name)) $imgSrc = '/uploads/profile_images/'.$img_name;
       ?>
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">

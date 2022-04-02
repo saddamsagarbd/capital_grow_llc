@@ -70,13 +70,13 @@
                             <table class="table table-hover pending-users-list">
                                 <thead>
                                     <tr>
-                                        <th style="width: 5%">SL</th>
-                                        <th>Username</th>
-                                        <th style="width: 25%">Details</th>
-                                        <th>Amount ($)</th>
-                                        <th>Payment Date</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
+                                        <th style="width: 2%">SL</th>
+                                        <th style="min-width: 80px; width: 80px;">Username</th>
+                                        <th style="width: 20%">Payment Details</th>
+                                        <th style="min-width: 80px; width: 80px;">Amount ($)</th>
+                                        <th style="min-width: 80px; width: 80px;">Payment Date</th>
+                                        <th style="min-width: 50px; width: 50px;">Status</th>
+                                        <th style="min-width: 80px; width: 80px;">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -111,9 +111,9 @@
                                         </td>
                                         <td>
                                             <button class="btn btn-info btn-xs make_confirm" data-user_id="{{ $user->user_id }}">Confirm</button>
-                                            <button class="btn btn-info btn-xs send_payinfo" data-user_id="{{ $user->user_id }}">
+                                            <!-- <button class="btn btn-info btn-xs send_payinfo" data-user_id="{{ $user->user_id }}">
                                                 <i class="fa fa-paper-plane fa-fw"></i> Send Payment Info
-                                            </button>
+                                            </button> -->
                                         </td>
                                     </tr>
                                 @endforeach
